@@ -150,7 +150,7 @@ IF "%1"=="--storage" GOTO :RunStorageAdapter
 
     docker run -it -p 9022:9022 ^
             -e PCS_STORAGEADAPTER_DOCUMENTDB_CONNSTRING ^
-            azureiotpcs/pcs-storage-adapter-dotnet:testing
+            vschinaiot/pcs-storage-adapter:testing
 
     :: Error 125 typically triggers in Windows if the drive is not shared
     IF %ERRORLEVEL% EQU 125 GOTO DOCKER_SHARE
