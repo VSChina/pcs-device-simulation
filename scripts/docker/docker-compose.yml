@@ -18,7 +18,7 @@ services:
     #volumes:
     #  - ./sample-volume:/app/data:ro
   storageadapter:
-    image: azureiotpcs/pcs-storage-adapter-dotnet:testing
+    image: vschinaiot/pcs-storage-adapter:testing
     ports:
       - "9022:9022"
     environment:
